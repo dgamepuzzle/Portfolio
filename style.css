@@ -1,0 +1,136 @@
+.btn {
+    background-color: rgb(255, 255, 255);
+    border: none;
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 16px;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    margin: 20px;
+}
+
+.btn:hover {
+    background-color: rgb(57, 214, 206);
+    color: white;
+    transform: scale(1.1);
+}
+
+.example {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -2;
+}
+
+.pix {
+    margin: 8px;
+    width: 70%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    text-align: center;
+}
+
+.title {
+    text-align: center;
+    color: white;
+    text-shadow: 0px 0px 4px #000000;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: all .1s ease-in-out;
+    animation-name: slideRight;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    visibility: visible !important;
+    /* New code here: */
+    animation-delay: 1s;
+}
+
+.title:hover {
+    color: rgb(246, 255, 255);
+}
+
+p {
+    margin: 8px;
+}
+
+h2 {
+    margin: 12px;
+}
+
+.expand {
+    height: 40px;
+    transition: all .2s ease-in-out;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.expand:hover {
+    transform: scale(1.1);
+}
+
+#backimg {
+    position: absolute;
+    z-index: -5;
+    top: 20px;
+    -webkit-clip-path: polygon(0 0, 0 100%, 100% 80px, 100% 0);
+    clip-path: polygon(0 80px, 0 380px, 100% 300px, 100% 0);
+    background-repeat: repeat-x;
+}
+
+#backimg2 {
+    position: absolute;
+    z-index: -5;
+    top: 800px;
+    width: 100%;
+    height: 100%;
+    -webkit-clip-path: polygon(0 0, 0 100%, 100% 80px, 100% 0);
+    clip-path: polygon(0 280px, 0 560px, 100% 480px, 100% 200px);
+}
+
+.bucket {
+    background-image: linear-gradient(to bottom, rgb(255, 255, 255), rgb(240, 240, 240));
+    height: 160pt;
+    width: 360pt;
+    margin: auto;
+    margin-top: 30pt;
+    border-radius: 16px;
+}
+
+.logo {
+    width: 50px;
+    padding: 15px;
+    transition: all .2s ease-in-out;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+#logoContainer {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 120px;
+}
+
+#front {
+    position: absolute;
+    width: 70%;
+    height: 1900px;
+    top: 110px;
+    margin-left: 15%;
+    margin-right: 15%;
+    background: white;
+    z-index: -6;
+    -webkit-clip-path: polygon(0 0, 0 100%, 100% 80px, 100% 0);
+    clip-path: polygon(0 230px, 0 1760px, 100% 1680px, 100% 150px);
+}

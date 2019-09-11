@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bubble.css">
+    <link rel="stylesheet" href="card.css">
+    <link rel="stylesheet" href="textAppear.css">
+</head>
+
+<body style="background-image: url('img/bckground.jpg'); background-repeat: repeat;background-attachment: fixed;;">
+
+    <!-- 
+    <img id=backimg src="img/bckground.jpg" alt="">
+    <img id=backimg2 src="img/bckground.jpg" alt="">
+    -->
+
+    <div id="front"></div>
+    <h1 class="title animate-reveal animate-first" style="padding-top: 120px">
+        ALEXANDER STECHER
+    </h1>
+    <h3 class="title animate-reveal animate-second">
+        portfolio
+    </h3>
+
+
+
+    <div id="logoContainer" class="animate-reveal animate-third">
+        <img class="logo" src="img/pylogo.png" alt="">
+        <img class="logo" src="img/jsLogo.png" alt="">
+        <img class="logo" src="img/tflogo.jpg" alt="">
+        <img class="logo" src="img/mysqlogo.png" alt="">
+        <img class="logo" src="img/cslogo.jpg" alt="">
+    </div>
+
+
+    <div class="bucket animate-reveal animate-fourth">
+        <div style="padding: 10px; font-family: sans-serif">
+            <h3 style="text-align: center">About me</h3>
+            <ul>
+                <li>Joung, motivated developer with Interest in new technologies</li>
+                <li>Front-end experience with <b>JS, HTML, CSS</b></li>
+                <li>Experience with <b>Python</b> in scientific computing and machine learning</li>
+                <li>Experience with object-oriented programming in <b>C#</b></li>
+            </ul>
+        </div>
+    </div>
+
+    <h1 style="padding-top: 50px" class="title">Projects</h1>
+
+
+    <div class="container">
+        <div class="cardcontainer">
+            <div class="card">
+                <figure class="front">
+                    <img class=pix src="img/pixexample.jpg" alt="image not available">
+                    <h2>PIXFACE</h2>
+                    <p>A Conditional Adversarial Neural Network trained to create realistic faces from doodles</p>
+                    <p style="font-size: 8pt">Python, JavaScript</p>
+                </figure>
+                <figure class="back" style="background-image: linear-gradient(to bottom,  rgb(215, 247, 255),rgb(0, 0, 0));">
+                    <br>
+                    <button class="btn" onclick="window.open('https://alliballibaba.github.io/PixFace/','_blank')">DEMO</button>
+                    <br>
+                    <button class="btn" onclick="window.open('https://github.com/AlliBalliBaba/PixFace','_blank')">source code</button>
+                </figure>
+            </div>
+        </div>
+
+        <div class="cardcontainer">
+            <div class="card">
+                <figure class="front">
+                    <img class=pix src="img/codExample.jpg" alt="image not available">
+                    <h2>COD PREDICTOR</h2>
+                    <p>Visualisation showing the most likely causes of death depending on age-group and geo-location</p>
+                    <p style="font-size: 8pt">Python, JavaScript</p>
+                </figure>
+                <figure class="back" style="background-image: linear-gradient(to bottom,  rgb(255, 210, 210),rgb(0, 0, 0));">
+                    <br>
+                    <button class="btn" onclick="window.open('https://alliballibaba.github.io/Causes-Of-Death-Around-The-World/','_blank')">DEMO</button>
+                    <br>
+                    <button class="btn" onclick="window.open('https://github.com/AlliBalliBaba/Causes-Of-Death-Around-The-World')">source code</button>
+                </figure>
+            </div>
+        </div>
+
+        <div class="cardcontainer">
+            <div class="card">
+                <figure class="front">
+                    <img class=pix src="img/sokoExample.gif" alt="image not available">
+                    <h2>SOKOBAN LVL GENERATOR</h2>
+                    <p>A random level generator for the classic puzzle-game Sokoban</p>
+                    <p style="font-size: 8pt">JavaScript</p>
+                </figure>
+                <figure class="back" style="background-image: linear-gradient(to bottom,  rgb(212, 255, 226),rgb(0, 0, 0));">
+                    <br>
+                    <button class="btn" onclick="window.open('https://alliballibaba.github.io/Sokoban-Level-Generator/','_blank')">DEMO</button>
+                    <br>
+                    <button class="btn" onclick="window.open('https://github.com/AlliBalliBaba/Sokoban-Level-Generator')">source code</button>
+                </figure>
+            </div>
+        </div>
+
+        <br>
+
+    </div>
+    <div class="container">
+
+        <div class="cardcontainer">
+            <div class="card">
+                <figure class="front">
+                    <img class=pix src="img/mazeExample.gif" alt="image not available">
+                    <h2>MAZE GENERATOR</h2>
+                    <p>A maze generator with 3 different path-finding algorithms, that solve the maze</p>
+                    <p style="font-size: 8pt">JavaScript</p>
+                </figure>
+                <figure class="back" style="background-image: linear-gradient(to bottom,  rgb(255, 254, 212),rgb(0, 0, 0));">
+                    <br>
+                    <button class="btn" onclick="window.open('https://alliballibaba.github.io/MazeGenerator-and-Pathfinder/','_blank')">DEMO</button>
+                    <br>
+                    <button class="btn" onclick="window.open('https://github.com/AlliBalliBaba/MazeGenerator-and-Pathfinder')">source code</button>
+                </figure>
+            </div>
+        </div>
+
+        <div class="cardcontainer">
+            <div class="card">
+                <figure class="front">
+                    <img class=pix src="img/arrowExample.jpg" alt="image not available">
+                    <h2>ARROW BOY</h2>
+                    <p>Mobile game created in Unity 3D</p>
+                    <p style="font-size: 8pt">C#</p>
+                </figure>
+                <figure class="back" style="background-image: linear-gradient(to bottom,  rgb(212, 213, 255),rgb(0, 0, 0));">
+                    <br>
+                    <button class="btn" onclick="window.open('https://play.google.com/store/apps/details?id=com.tscherg.Arrower&gl=AT','_blank')">link</button>
+                </figure>
+            </div>
+        </div>
+
+    </div>
+
+    <div style="text-align: right;padding-top: 100px;padding-right: 13%;">
+        <img class=expand src="img/lin.jpg" alt="soundcloud link" onclick="window.open('https://www.linkedin.com/in/alexander-stecher-199658184/')">
+        <img class=expand src="img/sCloud.jpg" alt="soundcloud link" onclick="window.open('https://soundcloud.com/onebit-bastard')">
+    </div>
+</body>
+
+
+</html>
