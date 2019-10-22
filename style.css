@@ -13,6 +13,10 @@
     margin: 20px;
 }
 
+body{
+    filter: drop-shadow(-1px 2px 3px rgba(50, 50, 0, 0.5));
+}
+
 .btn:hover {
     background-color: rgb(57, 214, 206);
     color: white;
@@ -40,21 +44,26 @@
 
 .title {
     text-align: center;
-    color: white;
-    text-shadow: 0px 0px 4px #000000;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     transition: all .1s ease-in-out;
     animation-name: slideRight;
     animation-duration: 1s;
     animation-timing-function: ease-in-out;
     visibility: visible !important;
-    /* New code here: */
     animation-delay: 1s;
 }
 
-.title:hover {
-    color: rgb(246, 255, 255);
+.title1 {
+    color: white;
+    text-shadow: 0px 0px 4px #000000;
 }
+.title2 {
+    color: rgb(0, 0, 0);
+    text-shadow: 0px 0px 4px #adadad;
+    margin-top: 30px;
+}
+
+
 
 p {
     margin: 8px;
@@ -96,11 +105,16 @@ h2 {
 
 .bucket {
     background-image: linear-gradient(to bottom, rgb(255, 255, 255), rgb(240, 240, 240));
-    height: 160pt;
-    width: 360pt;
+    height: 100%;
+    width: 380px;
+    max-width: 70%;
     margin: auto;
     margin-top: 30pt;
     border-radius: 16px;
+}
+
+li{
+    margin: 8px;
 }
 
 .logo {
@@ -119,18 +133,20 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 120px;
+    margin-top: 280px;;
 }
 
 #front {
     position: absolute;
     width: 70%;
-    height: 1900px;
+    min-width: 300px;
+    height: max-content;
     top: 110px;
     margin-left: 15%;
     margin-right: 15%;
     background: white;
-    z-index: -6;
-    -webkit-clip-path: polygon(0 230px, 0 1760px, 100% 1680px, 100% 150px);
-    clip-path: polygon(0 230px, 0 1760px, 100% 1680px, 100% 150px);
+    -webkit-clip-path: polygon(0 230px, 0 100%, 100% calc(100% - 80px), 100% 150px);
+    clip-path: polygon(0 230px, 0 100%, 100% calc(100% - 80px), 100% 150px);
+
+    background-image: linear-gradient(to right,  rgb(223, 223, 223) 0, rgb(255, 255, 255) 20%,rgb(255, 255, 255) 80%, rgb(223, 223, 223) 100%);
 }

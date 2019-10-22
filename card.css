@@ -1,29 +1,28 @@
 .container {
-    height: 340pt;
+    height: max-content;
     width: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-evenly;;
+    flex-wrap: wrap;
 }
 
 .cardcontainer {
-    width: 240px;
+    width: 290px;
     height: 389px;
-    margin-left: 45px;
-    margin-right: 45px;
+    margin-top: 40px;
 }
 
 .card {
-    width: 100%;
+    width: 90%;
     height: 100%;
-    transition: transform 0.3s ease-out;
+    transition: transform 0.25s ease-out;
     transform-style: preserve-3d;
     box-shadow: 5px 5px 12px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-radius: 16px;
 }
 
 .cardcontainer:hover .card {
-    transition-delay: 0.2s;
+    transition-delay: 0.1s;
     transform: rotateY(180deg);
 }
 
