@@ -28,7 +28,7 @@
 
 
     <div id="front">
-        <div id="logoContainer" class="animate-reveal animate-third">
+        <div id="logoContainer" >
             <img class="logo" src="img/pyLogo.png" alt="">
             <img class="logo" src="img/jsLogo.png" alt="">
             <img class="logo" src="img/tflogo.jpg" alt="">
@@ -37,9 +37,9 @@
         </div>
 
 
-        <div class="bucket animate-reveal animate-fourth">
+        <div class="bucket">
             <div style="padding: 10px; font-family: sans-serif">
-                <h3 style="text-align: center">about me</h3>
+                <h1 style="text-align: center" class="title title2">about me</h1>
                 <ul>
                     <li>Young, motivated developer with Interest in new technologies</li>
                     <li>Experience with <b>HTML, CSS, JS, PHP, MySQL</b></li>
@@ -49,7 +49,7 @@
             </div>
         </div>
 
-        <h1 style="padding-top: 70px" class="title title2 animate-reveal animate-fourth">Some Projects</h1>
+        <h1 style="padding-top: 70px" class="title title2">Some Projects</h1>
 
         <div style="width: 85%; margin: auto;">
             <div class="container">
@@ -78,9 +78,30 @@
                 <div class="cardcontainer">
                     <div class="card">
                         <figure class="front">
+                            <img class=pix src="img/calExample.jpg" alt="image not available">
+                            <h2>DATE BOOK</h2>
+                            <p>A simple Calendar for appointments with a fake local databank</p>
+                            <p style="font-size: 8pt">React</p>
+                        </figure>
+                        <figure class="back"
+                            style="background-image: linear-gradient(to bottom,  rgb(255, 254, 212),rgb(0, 0, 0));">
+                            <br>
+                            <button class="btn"
+                                onclick="window.open('https://alliballibaba.github.io/Calendar/')">DEMO</button>
+                            <br>
+                            <button class="btn"
+                                onclick="window.open('https://github.com/AlliBalliBaba/Calendar')">source
+                                code</button>
+                        </figure>
+                    </div>
+                </div>
+
+                <div class="cardcontainer">
+                    <div class="card">
+                        <figure class="front">
                             <img class=pix src="img/mazeExample.gif" alt="image not available">
                             <h2>MAZE GENERATOR</h2>
-                            <p>A maze generator with 3 different path-finding algorithms, that solve the maze</p>
+                            <p>A maze generator with 3 different path-finding algorithms that solve the maze</p>
                             <p style="font-size: 8pt">JavaScript</p>
                         </figure>
                         <figure class="back"
