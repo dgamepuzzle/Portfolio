@@ -97,24 +97,7 @@ h2 {
     transform: scale(1.1);
 }
 
-#backimg {
-    position: absolute;
-    z-index: -5;
-    top: 20px;
-    -webkit-clip-path: polygon(0 80px, 0 380px, 100% 300px, 100% 0);
-    clip-path: polygon(0 80px, 0 380px, 100% 300px, 100% 0);
-    background-repeat: repeat-x;
-}
 
-#backimg2 {
-    position: absolute;
-    z-index: -5;
-    top: 800px;
-    width: 100%;
-    height: 100%;
-    -webkit-clip-path: polygon(0 280px, 0 560px, 100% 480px, 100% 200px);
-    clip-path: polygon(0 280px, 0 560px, 100% 480px, 100% 200px);
-}
 
 .bucket {
     background-image: linear-gradient(to bottom, rgb(255, 255, 255), rgb(240, 240, 240));
@@ -163,8 +146,21 @@ li{
     background-image: linear-gradient(to right,  rgb(223, 223, 223) 0, rgb(255, 255, 255) 20%,rgb(255, 255, 255) 80%, rgb(223, 223, 223) 100%);
 }
 
+@media only screen and (max-width: 1080px) {
+    #front {
+      width:90%;
+    }
+  }
+
+
 @media only screen and (max-width: 600px) {
     #front {
       width:100%;
+    }
+
+    #front {
+        clip-path: none;
+        -webkit-clip-path: none;
+        border-radius: 30px;
     }
   }
