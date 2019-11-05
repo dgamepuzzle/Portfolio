@@ -6,6 +6,7 @@ background-attachment: fixed;
 -moz-background-size: cover;
 -o-background-size: cover;
 background-size: cover;
+filter: drop-shadow(-1px 2px 3px rgba(50, 50, 0, 0.5));
 }
 
 
@@ -26,9 +27,6 @@ background-size: cover;
     margin: 20px;
 }
 
-body{
-    filter: drop-shadow(-1px 2px 3px rgba(50, 50, 0, 0.5));
-}
 
 .btn:hover {
     background-color: rgb(57, 214, 206);
@@ -75,8 +73,6 @@ body{
     text-shadow: 0px 0px 2px #adadad;
     margin-top: 30px;
 }
-
-
 
 p {
     margin: 8px;
